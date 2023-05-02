@@ -1,13 +1,12 @@
 # My Token
-The implementation of a token contract that allows users to create and burn tokens is the primary goal of this Solidity project. The program also makes use of conditional expressions to make sure that certain actions are only carried out when possible. It also enables the tracking of balances linked to certain addresses.
+The main objective of this Solidity project is to construct a token contract that enables users to create and burn tokens. In order to ensure that specific actions are only taken when possible, the program additionally uses conditional expressions. Additionally, it makes it possible to track balances connected to specific addresses.s.
 # Description
-This application is a simple contract that uses a mapping data structure to keep track of how many tokens are owned by each address. Two functions—one to add tokens and the other to remove them—are provided by the software. Overall, this application acts as a useful simulation, showing how tokens are minted and burned.
+This application is a straightforward contract that counts the number of tokens owned by each address using a mapping data structure. The software offers two operations: one to add tokens and the other to remove them. Overall, this program serves as a helpful simulation, illuminating the creation and destruction of tokens.
 # Getting Started
 # Executing Program
-To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
+Remix is an online Solidity IDE that you may use to run this application. To get started, go to https://remix.ethereum.org/.
 
-Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., myToken.sol). Copy and paste the following code into the file:
-
+When you are on the Remix website, click the "+" icon in the left sidebar to start a new file. Save the document with the extension.sol (for example, myToken.sol). The code below should be copied and pasted into the file:
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
@@ -38,20 +37,20 @@ uint public  TotalSupply = 0;
        
     
 
-To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.18" (or another compatible version), and then click on the "Compile myToken.sol" button.
+Click the "Solidity Compiler" tab in the left-hand sidebar to compile the code. Click the "Compile myToken.sol" button after making sure the "Compiler" option is selected to "0.8.18" (or another compatible version).
 
-To deploy the contract, click on the "Deploy and Run Transactions" button. This will open a new window that allows you to deploy the contract. Do not forget to select the “MyToken” contract before deploying.
+Select "Deploy and Run Transactions" to start the contract deployment process. You can deploy the contract from a new window that will open as a result. Before deploying, don't forget to choose the "MyToken" contract.
 
-In the deployment window “Deployed Contracts”, set the parameters for the balance, mint, and burn functions.
+Set the parameters for the balance, mint, and burn functions in the "Deployed Contracts" section of the deployment window.
 
-To mint new tokens, input the address of the recipient and the number of tokens you want to mint and click transact.
-To burn tokens, input the address of the recipient and the number of tokens you want to burn and click transact.
-To see current balances of the address, input the address of the recipient and the number of tokens you want to mint and click call. You can also see the total supply by clicking the “totalSupply” button.
+Enter the recipient's address and the desired quantity of new tokens, then click "transact" to start the token minting process.
+Enter the recipient's address and the desired number of tokens, then click "transact" to burn them.
+Enter the recipient's address and the desired token production quantity, then click call to view the address's current balances. By selecting the "totalSupply" button, you can also view the total supply.
 # Authors
 NTCIAN Alber C Aquino
 Discord: @albercaquino
 #4427
 
 # license
-unlicensed
+MIT
 
